@@ -8,6 +8,10 @@ So, in the interest of driving almost any fleeting curiosity too far, here's a g
 
 By default, it does pi, up to 32 digits, and store the image in piday.jpg. You can specify and output file, and also an input file (-f file) or a number (-n 123) if you want to do something other than Pi (reverse phone number captcha?). You can also limit the number of digits/decimals (-l 10). If you want to make this super obivious, it can also add name captions (-name) or the number itself overlayed (-numb).
 
+![Example image](https://github.com/NoThisIsPatrik/PresidentialNumerals/blob/master/piday_with_names.jpg)
+
+![Example image](https://github.com/NoThisIsPatrik/PresidentialNumerals/blob/master/piday_w_numbers.jpg)
+
 It's in python3 (and won't run in 2, though not through using anything that out there). It uses PIL/pillow to manipulate images, and if you try to have it download the list of presidents/images, it'll use BeautifulSoup 4 and requests. It'll run fine witout them if it has it's files with it though.
 
 Happy Pi day!
@@ -21,6 +25,7 @@ Oh, and the font file, AbrahamLincoln.ttf, is from https://befonts.com/president
 * PIL/pillow
 * BeautifulSoup4 (optional)
 * Requests (optional)
+
 All three can, after cloning, be installed with
 <pre>python3 -mpip install -r requirements.txt</pre>
 or with pipenv, virtualenv, docker via k8s.. however you roll installing some super common packages while keeping a clean environment.
