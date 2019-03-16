@@ -4,6 +4,8 @@ It's Pi day, and this guy I know posted a picture of Thomas Jefferson, a dot, Wa
 
 So, in the interest of driving almost any fleeting curiosity too far, here's a generator. It uses a list and a set of thumbnails from wikipedia, throuh they are included here. As is the download/parse code, which will probably break in a bit when something changes on the wikimedia pages.
 
+![Example image](https://github.com/NoThisIsPatrik/PresidentialNumerals/blob/master/piday.jpg)
+
 By default, it does pi, up to 32 digits, and store the image in piday.jpg. You can specify and output file, and also an input file (-f file) or a number (-n 123) if you want to do something other than Pi (reverse phone number captcha?). You can also limit the number of digits/decimals (-l 10). If you want to make this super obivious, it can also add name captions (-name) or the number itself overlayed (-numb).
 
 It's in python3 (and won't run in 2, though not through using anything that out there). It uses PIL/pillow to manipulate images, and if you try to have it download the list of presidents/images, it'll use BeautifulSoup 4 and requests. It'll run fine witout them if it has it's files with it though.
